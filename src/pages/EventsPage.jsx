@@ -22,6 +22,7 @@ const EventsPage = () => {
         setLoading(false);
       } catch (err) {
         setError('Failed to load events. Is your backend running?');
+        console.log(err);
         setLoading(false);
       }
     };
